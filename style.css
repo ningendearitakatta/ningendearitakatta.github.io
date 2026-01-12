@@ -1,0 +1,49 @@
+/* 全体 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* 背景・文字 */
+body {
+  background-color: #000;
+  color: #e6e6e6;
+
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  font-size: 18px;
+  line-height: 2.2;
+
+  overflow-x: auto;
+}
+
+/* 本文エリア */
+.novel {
+  max-height: 80vh;
+  margin: auto;
+  padding: 40px;
+}
+
+/* 段落 */
+.novel p {
+  margin: 0 0 2em 0;
+}
+
+/* ===== スマホ縦画面ブロック ===== */
+@media screen and (orientation: portrait) {
+  body::before {
+    content: "横画面にして読んでください";
+    position: fixed;
+    inset: 0;
+    background: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    writing-mode: horizontal-tb;
+  }
+}
