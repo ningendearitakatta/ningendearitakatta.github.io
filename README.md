@@ -1,1 +1,1 @@
-# ningendearitakatta.THEBASEMENTOFCARNIFEX.io
+ningendearitakatta.github.io
